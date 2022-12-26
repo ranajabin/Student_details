@@ -1,0 +1,22 @@
+{
+    "student": [
+        {
+            "regno": "123",
+            "studname": "Sumit",
+            "mobno": "928392802",
+            "address": "Bangalore"
+        },
+        {
+            "regno": "345",
+            "studname": "Ankita",
+            "mobno": "892839280",
+            "address": "Punjab"
+        },
+        {
+            "regno": "567",
+            "studname": "Kiran",
+            "mobno": "983928029",
+            "address": "Pune"
+        }
+    ]
+}

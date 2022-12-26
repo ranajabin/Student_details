@@ -1,0 +1,62 @@
+<mvc:View controllerName="tableandform1.tableandformproject1.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+    <Page id="page" showHeader="false" title="{i18n>title}">
+        <content>
+            <Table headerText="Student Table:-" items="{/student}" id="tab">
+                <columns>
+                    <Column>
+                        <Text text="Stud name" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Reg No" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Mobile No." />
+                    </Column>
+
+                    <Column>
+                        <Text text="Address" />
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem type="Active" id="col1" press="onRowClick">
+                        <cells>
+                            <!-- <Button type="Emphasized" text="{OrderID}" press="onClick" />  -->
+                            <!-- <Link text="{regno}" press="onClick" /> -->
+
+                            <Text id="txt3" text="{studname}" />
+                            <Text id="txt2" text="{regno}" />
+                            <Text id="txt4" text="{mobno}" />
+                            <Text id="txt5" text="{address}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+            <f:SimpleForm title="Student Details Form:">
+                <f:content>
+                    <Label text="Reg No" />
+                    <Input value="{student2>/0/regno}" width="60%" />
+
+                    <Label text="Student Name" />
+                    <Input value="{student2>/0/studname}" width="60%" />
+
+                    <Label text="Mobile No." />
+                    <Input value="{student2>/0/mobno}" width="60%" />
+
+                    <Label text="Address" />
+                    <Input value="{student2>/0/address}" width="60%" />
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <footer>
+            <Bar design="Footer">
+                <contentRight>
+                    <Button text="Display" press="onPress" type="Emphasized" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
